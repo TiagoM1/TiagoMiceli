@@ -26,15 +26,14 @@ print(multiplicacion)
 division = num1/num2
 print(division)
 
-# Ejercicio 4
 
+# Ejercicio 4
 farenh = float(input("Ingrese los grados fahrenheit: "))
 celsius = (farenh-32)*5/9
 print(f"El equivalente en celsius de {farenh}°F es: {celsius}°C")
 
 
 # Ejercicio 5
-
 
 # a) A = input(nombre, “¿Cuál es tu canción favorita?”)
 # El error se encuentra en que input no puede recibir dos argumentos
@@ -65,32 +64,29 @@ print(f"El equivalente en celsius de {farenh}°F es: {celsius}°C")
 #   print("tu edad no es 18 años")
 
 # Ejercicio 6
-num = 0
-suma = 0
-for i in range(3):
-    num = float(input(f"Ingrese la el numero {i+1}: "))
-    suma = suma + num
+num1 = float(input("Ingrese el número 1: "))
+num2 = float(input("Ingrese el número 2: "))
+num3 = float(input("Ingrese el número 3: "))
+suma = num1 + num2 + num3
 print(f"Media: {suma/3}")
 
 
 # Ejercicio 7
-
 valor = int(input("Ingrese la cantidad de minutos que desee: "))
-
 minutos = valor % 60
 horas = (valor - minutos)/60
 print(f"{valor} minutos son {horas} horas y {minutos} minutos")
 
 
 # Ejercicio 8
-
 sueldo_base = float(input("Ingrese el sueldo base: "))
-# cantidad_ventas = int(print("Ingrese cantidad de ventas:) "))
+cantidad_ventas = int(print("Ingrese cantidad de ventas:) "))
 cantidad_ventas = 3
 comision = 0.1*cantidad_ventas*sueldo_base
 sueldo_total = sueldo_base + comision
 print(
     f"Total de dinero en comisiones $ {comision} \nRemuneracion total de salario mas comision es: ${sueldo_total}")
+
 
 # Ejercicio 9
 compra = float(input("Ingrese el valor de su compra: "))
@@ -103,20 +99,15 @@ print("El total de su compra con descuento es de: ", total)
 parcial1 = float(input('ingrese la nota del primer parcial: '))
 parcial2 = float(input('ingrese la nota del segundo parcial: '))
 parcial3 = float(input('ingrese la nota del tercer parcial: '))
-
 notas_parcial = (parcial1+parcial2+parcial3)/3
-
 examen_final = float(input('ingrese la nota del examen final: '))
-
 trabajo_final = float(input('ingrese la nota del trabajo final: '))
-
 promedio = (notas_parcial * 0.55) + \
     (examen_final * 0.30) + (trabajo_final * 0.15)
-
 print('el promedio de todas tus notas es de: ', promedio)
 
-# Ejercicio 11.
 
+# Ejercicio 11.
 num1 = float(input("Ingrese numero 1: "))
 num2 = float(input("Ingrese numero 2: "))
 
@@ -126,34 +117,29 @@ print(f"La distancia entre {num1} y {num2} es: {dist}")
 
 
 # Ejercicio 12
-
 numero = float(input("Ingrese un numero: "))
-
 r_cuadrada = numero**1/2
 r_cubica = numero**1/3
+print(f"La raiz cuadrada de {numero} es: {r_cuadrada} y su raiz cubica es: {r_cubica}")
 
-print(
-    f"La raiz cuadrada de {numero} es: {r_cuadrada} y su raiz cubica es: {r_cubica}")
 
 # Ejercicio 13
-num = input("Ingrese un número:")
-inversa = ""
-for i in range(len(num)):
-    inversa += num[len(num) - 1 - i]
-print(f"num: {num}")
-print(f"Inversa: {inversa}")
+num = input("Ingrese un número de dos cifras:")
+if len(num) == 2:
+    inversa = num[1] + num[0]
+    print(f"num: {num}")
+    print(f"Inversa: {inversa}")
+else:
+    print("Por favor, ingrese un número de dos cifras.")
 
 
 # Ejercicio 14
-
 numero_a = int(input("Ingrese el primer número que desee: "))
 numero_b = int(input("Ingrese el segundo número que desee: "))
-
 numero_h = numero_a
 numero_a = numero_b
 numero_b = numero_h
-print(
-    f"El primer número ingresado cambió a {numero_a} y el segundo número ingresado cambió a {numero_b}")
+print(f"El primer número ingresado cambió a {numero_a} y el segundo número ingresado cambió a {numero_b}")
 
 
 # Ejercicio 15
@@ -168,10 +154,9 @@ segundo_final = (segundo_inicial + segundos) % 60
 minuto_final = (minuto_inicial + (segundo_inicial + segundos)//60+minutos) % 60
 hora_final = (hora_inicial+horas+(minuto_inicial +
               (segundo_inicial + segundos)//60+minutos)//60) % 24
-print(
-    f"Hora de salida:   {hora_inicial} hs  {minuto_inicial} min {segundo_inicial} seg")
-print(
-    f"Hora de llegada:   {hora_final} hs {minuto_final} min {segundo_final} seg")
+print(f"Hora de salida:   {hora_inicial} hs  {minuto_inicial} min {segundo_inicial} seg")
+print(f"Hora de llegada:   {hora_final} hs {minuto_final} min {segundo_final} seg")
+
 
 # Ejercicio 16
 nombre = input("Ingrese su nombre: ")
@@ -185,8 +170,8 @@ print("Sus iniciales son: ", iniciales)
 usuario = input('ingrese su nombre: ')
 print('ahora estás en la matrix, ', usuario)
 
-# Ejercicio 18
 
+# Ejercicio 18
 valor_cena = float(input("Ingrese el valor de la cena: "))
 cost_serv = (valor_cena * 6.2)/100
 propi = (valor_cena * 10)/100
@@ -195,12 +180,11 @@ print(
 
 
 # Ejercicio 19
-
 dia = int(input("Ingrese el dia de tu nacimiento: "))
 mes = int(input("Ingrese el mes de tu nacimiento: "))
 año = int(input("Ingrese el año de tu nacimiento: "))
-
 print(f"El dia de tu nacimiento es: {dia}/{mes}/{año}")
+
 
 # Ejercicio 20
 fecha = ""
@@ -211,7 +195,6 @@ print(f"Fecha: {fecha}")
 
 
 # Ejercicio 21
-
 km_1litro = int(input(
     "Ingrese la cantidad kilómetros que su moto recorre con 1L de combustible: "))
 capacidad = int(
